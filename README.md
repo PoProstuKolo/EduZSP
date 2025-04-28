@@ -8,9 +8,9 @@ EduZSP to aplikacja webowa stworzona na zaliczenie do szkoły. Ogólny zamysł a
 
 # Technologie:
 - Front-end:
- - HTML
- - SCSS
- - JavaScript
+  - HTML
+  - SCSS
+  - JavaScript
 - Back-end:
- - PHP
- - MySQL
+  - PHP
+  - MySQL
