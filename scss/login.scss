@@ -1,0 +1,122 @@
+@use './reset' as *;
+
+body{
+    min-height: 100%;
+    background: rgb(6,187,35);
+    background: linear-gradient(180deg, rgba(6,187,35,1) 0%, rgba(0,47,8,1) 100%);
+    background-attachment: fixed;
+}
+
+.eduzsp{
+    &__title{
+    text-align: center;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 900;
+    text-shadow: 5px 5px 0 #000;
+    }
+    
+    &__img{
+        width: 225px;
+        margin-right: -.5em;
+    }
+}
+
+.login{
+    &__box{
+        background-color: #000a;
+        border-radius: 8px;
+        padding: 2.5em;
+    }
+
+    &__title{
+        font-size: 2.8rem;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    &__hr{
+        width: 100%;
+        margin: 0 auto;
+        height: 2px;
+        background-color: #fff;
+        margin: 1.5em 0em;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__label{
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    &__input{
+        font-size: 1.8rem;
+        padding: .25em .5em;
+        border-radius: 15px;
+        outline: none;
+        border: 2px solid transparent;
+
+        &:focus{
+            border: 2px solid #06bb23;
+        }
+    }
+
+    &__btn{
+        margin-top: 2em;
+        font-size: 2rem;
+        border-radius: 15px;
+        outline: none;
+        border: 2px solid #06bb23;
+        background-color: transparent;
+        color: #06bb23;
+        padding: .25em .5em;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+        &:hover{
+            background-color: #06bb23;
+            color: #000;
+        }
+    }
+
+    &__register{
+        color: #06bb23;
+        position: relative;
+        transition: color .15s ease-in-out;
+        padding: .5em;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #06bb23;
+            transition: height .15s ease-in-out;
+            z-index: -1;
+        }
+
+        &:hover::before{
+            height: 100%;
+        }
+
+        &:hover{
+            color: #fff;
+        }
+
+        &-txt{
+            color: #fff;
+            margin-top: 2.5em;
+            margin-bottom: -1em;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}

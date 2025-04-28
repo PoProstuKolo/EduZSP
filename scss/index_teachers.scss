@@ -1,0 +1,61 @@
+@use './reset' as *;
+
+body{
+    min-height: 100%;
+    background: rgb(6,187,35);
+    background: linear-gradient(180deg, rgba(6,187,35,1) 0%, rgba(0,47,8,1) 100%);
+    background-attachment: fixed;
+}
+
+.role{
+    color: #fff;
+    font-size: 3rem;
+    padding: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000;;
+}
+
+.logout-btn{
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    font-size: 2rem;
+    color: #06bb23;
+    border: 2px solid #06bb23;
+    padding: 0.5em 1em;
+    transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out, text-shadow .15s ease-in-out, color .15s ease-in-out;
+
+    &:hover{
+        background-color: #06bb23;
+        color: #fff;
+        box-shadow: 0px 0px 5px #06bb23, 0px 0px 15px #06bb23;;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 15px #fff;;
+    }
+}
+
+.options{
+    color: #fff;
+    font-size: 2rem;
+
+    &__box{
+        background-color: #000a;
+        ;box-shadow: 0 8px 32px 0 rgba(5, 6, 20, 0.37);backdrop-filter: blur( 7px );-webkit-backdrop-filter: blur( 7px );border-radius: 10px;
+        padding: 3em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+    }
+
+    &__btn{
+        padding: 0.5em 1em;
+        color: #fff;
+        border: 2px solid #06bb23;
+        font-size: 1.8rem;
+        transition: background-color .15s ease-in-out;
+
+        &:hover{
+            background-color: #06bb23;
+        }
+    }
+}

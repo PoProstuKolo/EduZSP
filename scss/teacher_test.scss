@@ -1,0 +1,90 @@
+@use './reset' as *;
+
+body {
+	min-height: 100vh;
+	background: rgb(6, 187, 35);
+	background: linear-gradient(180deg, rgba(6, 187, 35, 1) 0%, rgba(0, 47, 8, 1) 100%);
+	background-attachment: fixed;
+	position: relative;
+}
+
+.logout-btn {
+	position: absolute;
+	bottom: 1.25%;
+	right: 2.5%;
+	font-size: 2rem;
+	color: #06bb23;
+	border: 2px solid #06bb23;
+	padding: 0.5em 1em;
+	transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, text-shadow 0.15s ease-in-out,
+		color 0.15s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: #06bb23;
+		color: #fff;
+		box-shadow: 0px 0px 5px #06bb23, 0px 0px 15px #06bb23;
+		text-shadow: 0px 0px 5px #fff, 0px 0px 15px #fff;
+		outline: none;
+	}
+}
+
+.title {
+	color: #000;
+	font-size: 3.6rem;
+}
+
+.test {
+	&_list {
+		list-style-type: none;
+		font-size: 2rem;
+		background-color: #000a;
+		padding: 1.5em;
+		border-radius: 1.2em;
+
+		margin: 0 auto;
+		color: #fff;
+
+		li {
+			margin: 0.5em 0;
+		}
+	}
+
+	&_name {
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	&_link {
+		color: #06bb23;
+		position: relative;
+		z-index: 5;
+		padding: 0.25em;
+		transition: color 0.15s ease-in-out;
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0;
+			background-color: #06bb23;
+			z-index: -1;
+			transition: height 0.15s ease-in-out;
+		}
+
+		&:hover::after,
+		&:focus::after {
+			height: 100%;
+			color: #000;
+			outline: none;
+		}
+
+		&:hover,
+		&:focus {
+			color: #000;
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@use './reset' as *;
+
+body{
+
+    background: rgb(6,187,35);
+    background: linear-gradient(180deg, rgba(6,187,35,1) 0%, rgba(0,47,8,1) 100%);
+    background-attachment: fixed;
+}
+
+.info{
+
+    &__bold
+    {
+    font-weight: bold;
+    color: #000;
+    }
+
+    &__btn{    
+        position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    font-size: 2rem;
+    color: #06bb23;
+    border: 2px solid #06bb23;
+    padding: 0.5em 1em;
+    transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out, text-shadow .15s ease-in-out, color .15s ease-in-out;
+
+    &:hover{
+        background-color: #06bb23;
+        color: #fff;
+        box-shadow: 0px 0px 5px #06bb23, 0px 0px 15px #06bb23;;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 15px #fff;;
+    }
+    
+}}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+
+.container p{
+    font-size: 2rem;
+    color: #fff;
+}
+
